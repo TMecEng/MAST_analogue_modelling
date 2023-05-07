@@ -7,3 +7,6 @@ then use the files in the following order:
 2. MAST_analogue_modelling/Averging_files.py (in python)
 3.MAST_analogue_modelling/Code_for_filtering_and_animating_Real_Sense_csv_data.m (in matlab)
 4.MAST_analogue_modelling/fn_gaussian.m (in matlab with previous file)
+# Kinect
+for the kinect please go to https://github.com/capo-urjc/KAM and use the instructions there and you will need the kinect sdk
+once this is completed use the realsense MAST_analogue_modelling/Code_for_filtering_and_animating_Real_Sense_csv_data.m however following the instructions in x
