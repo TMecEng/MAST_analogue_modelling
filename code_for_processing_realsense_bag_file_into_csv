@@ -1,3 +1,0 @@
-%you will have needed to have downloaded the realsense sdk and located the rs converter within your program files
-%then post this code into your terminal window
- "A:\location\of\your\program\files\intel RealSense SDK 2.0\tools\rs-convert.exe" -v "B:location\to\put\the\csv\files" -i "C:location\of\the\realsense\file.bag"
