@@ -8,5 +8,5 @@ then use the files in the following order:
 3.MAST_analogue_modelling/Code_for_filtering_and_animating_Real_Sense_csv_data.m (in matlab)
 4.MAST_analogue_modelling/fn_gaussian.m (in matlab with previous file)
 # Kinect
-for the kinect please go to https://github.com/capo-urjc/KAM and use the instructions there and you will need the kinect sdk.
-Once this is completed use the realsense MAST_analogue_modelling/Code_for_filtering_and_animating_Real_Sense_csv_data.m however following the instructions in x
+For the kinect please go to https://github.com/capo-urjc/KAM and use the instructions there for the KAM software (you will need the kinect sdk).
+Once this is completed use the realsense MAST_analogue_modelling/Code_for_filtering_and_animating_Real_Sense_csv_data.m file for filtering however following the instructions in the kinect filtering branch
