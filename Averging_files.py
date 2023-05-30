@@ -1,6 +1,6 @@
 import os
 import csv
-
+#Folder of the csv files
 input_dir = r"A:Location\of\realsense\csvfiles"
 
 #this will store the averaged files in a foldernamed average
@@ -8,7 +8,7 @@ output_dir = os.path.join(input_dir, "Averaged")
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
 
-#n sets the number of files avewraged together
+#n sets the number of files averaged together
 n = 5
 #please name the files for averaging by the convention 
 #A:Location\of\realsense\csvfiles\nameoffile (1), A:Location\of\realsense\csvfiles\nameoffile (2) etc
