@@ -10,3 +10,9 @@ then use the files in the following order:
 # Kinect
 For the kinect please go to https://github.com/capo-urjc/KAM and use the instructions there for the KAM software (you will need the kinect sdk).
 Once this is completed use the realsense MAST_analogue_modelling/Code_for_filtering_and_animating_Real_Sense_csv_data.m file for filtering however following the instructions in the kinect filtering branch
+# LA Vision Digital Image Correlator
+For the DIC:
+Use MAST_analogue_modelling/Retrieving_Max_Z.py to find the values and x, y positions of max displacement through time.
+Use MAST_analogue_modelling/Scatter_3D_Plot.py to produce surface plots of a timestep.
+
+
