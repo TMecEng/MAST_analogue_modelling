@@ -1,3 +1,7 @@
+# This piece of code outputs the x and y positions of the point of max z-displacement as they change through time
+# To use it scroll down to the 'main' function and edit the filepath and range of data
+# Make sure that all you files have the same prefix and the only part of the name changing is the last 4 numbers.
+
 import numpy as np
 import os
 import matplotlib.pyplot as plt
@@ -14,7 +18,7 @@ def import_data(file_path):
     return data
 
 
-def clean(data):
+def clean(data): # this decides which data to keep from the csv files
     clean_data = [[row[i] for i in range(len(row)) if i in (0, 1, 2, 3, 4, 5)] for row in data]
     clean_data.pop(0)
 
@@ -48,17 +52,7 @@ def find_max_value(arr):
 
     return max_pos
 
-def save_csv(filename, data):
-    """
-    Saves a 2D array as a CSV file.
-
-    Args:
-    - filename (str): The filename for the CSV file.
-    - data (list): The 2D array to be saved.
-
-    Returns:
-    - None
-    """
+def save_csv(filename, data): #saves a 2D array as a csv file
     # Open the CSV file in write mode
     with open(filename, "w", newline="") as file:
 
@@ -77,7 +71,7 @@ def main():
     max_data = []
 #change the range to the largest number in your files
     for i in range(1, 3000):
-        #copy the filename from file path, you may need to change the 'B' for whatever the prefix is to the 4 numbers at the end of the file name
+        #copy the filename from file path, you may need to change the prefix for whatever the prefix is to the 4 numbers at the end of the file name
         filename = "Insert_prefix_of_datafile_names{:04d}.csv".format(i)
         if os.path.exists(filename):
             data = np.array(retrieve_and_clean(filename))

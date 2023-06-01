@@ -1,8 +1,10 @@
+# This piece of code creates a 3D scatter plot (surface) of a timestep of data from the LAVision StrainMaster DIC
+# To use it scroll down to the 'main' function and add a filepath
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
-
-
 
 def import_data(file_path):
     # Open the CSV file
